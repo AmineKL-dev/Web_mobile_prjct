@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+ul{
+    list-style: none;
+}
+:root{
+    --bg-color: #080808;
+    --bg2-color:#131313;
+    --text-color: #fff;
+    --text2-color: #00bec8;
+}
+.primary-text{
+    color: var(--text2-color);
+}
+.btn{
+    display: inline-block;
+    background-color: var(--text2-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(3, 255, 238, 0.855);
+}
+.btn2{
+    display: inline-block;
+    background-color: var(--bg-color);
+    color: var(--text2-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px solid var(--text2-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(3, 255, 238, 0.855);
+}
+.btn:hover {
+    scale: 0.95;
+}
+.btn2:hover {
+    scale: 0.95;
+}
+ hr{
+    border: 2px solid var(--text2-color);
+    width: 100px;
+    margin: 5px auto;
+}
+/* header */
+header {
+    background-color: var(--bg2-color);
+    height: 100vh;
+    z-index: -1;  
+}
+header .Navbar {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem 2rem ;
+    
+}
+header .Navbar .logo{
+    color: var(--text2-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+header .Navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    
+}
+header .Navbar ul a{
+    margin: 0 15px;
+    color:var(--text-color);
+    padding:15px 35px;
+    font-weight: 400;
+}
+header .Navbar ul a:hover{
+    color: var(--text2-color);
+    border-bottom:2px solid var(--text2-color);
+}
+header .Navbar ul a.active{
+    color: var(--text2-color);
+    border-bottom:2px solid var(--text2-color);
+}
+/* header home page */
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+     
+     margin: auto;
+     height: 100%;
+     align-items: center;
+    padding: 2rem 2rem 0;
+    max-width: 1100px;
+}
+header .header-content h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+header .header-content h1 span{
+    font-size: 4rem;
+    color: var(--text2-color);
+    text-shadow: 3px 3px 3px rgba(97, 97, 97, 0.5);
+}
+header .header-content p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+/*  header image  */
+header .header-content img{
+    position: absolute;
+    border: 2px solid var(--text2-color);
+    border-radius: 32vw;
+    
+}
+header .header-content .social{
+    display: flex;
+    
+}
+header .header-content .social a{
+    margin: 5px 10px;
+    color: var(--text2-color);
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgb(145, 145, 145);
+    transition: all 0.3s ease;
+}
+header .header-content .social a:hover{
+    color: var(--text-color);
+}
+header .header-content .content-btn a{
+    margin-right:10px; 
+}
+/* About me */
+.about-container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    
+}
+#About{
+    background-color:var(--bg2-color);
+    padding: 6rem 0;
+}
+#About h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+#About .about-content{
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+    padding: 5rem 2rem;
+    font-size: 16px;
+    color: var(--text-color);
+}
+#About .about-container hr{
+    border: 2px solid var(--text2-color);
+    width: 100px;
+    margin: 5px auto;
+}
+#About .about-container .about-text1 h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#About .about-content .about-text1{
+    border: 4px solid var(--text2-color);
+    border-radius: 2vw;
+    box-shadow: 0 0 5px rgb(213, 213, 213);
+    margin: 10px;
+    padding: 2rem;
+}
+#About .about-content .about-text2{
+    border: 4px solid var(--text2-color);
+    border-radius: 2vw;
+    box-shadow: 0 0 5px rgb(213, 213, 213);
+    padding: 2rem;
+    margin: 10px;
+}
+#About .about-content .about-text2 p {
+    
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid  var(--text-color);
+}
+/* Skills and projects */
+#skills{
+    background-color:var(--bg2-color);
+    padding: 6rem 0;
+}
+#skills .container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+#skills h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+#skills .container hr{
+    border: 2px solid var(--text2-color);
+    width: 100px;
+    margin: 5px auto;
+}
+#skills img{
+    max-width: 80px;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+#skills .skills ,.projects{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+}
+#skills .project,.skill{
+    border: 4px solid var(--text2-color);
+    border-radius: 2vw;
+    box-shadow: 0 0 5px rgb(213, 213, 213);
+    padding: 2rem;
+    margin: 10px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+#skills .project:hover{
+    border: 4px solid var(--text-color);
+}
+#skills .skill:hover{
+    border: 4px solid var(--text-color);
+}
+#skills h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* contact */
+
+#contact{
+    background-color:var(--bg-color);
+    padding: 6rem 0;
+}
+#contact h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+#contact .contact-content{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+#contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+#contact form .inputs-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contact form .inputs-1 input,textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--bg2-color);
+    border-radius: 1rem;
+    border: 2px solid var(--text2-color);
+    margin: 10px;
+}
+#contact form .inputs-2 .btn{
+    width: 50%;
+}
