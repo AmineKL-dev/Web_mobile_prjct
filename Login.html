@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-content">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="login-inputs">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" pattern=".{8,}" required title="8 characters minimum">
+
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Login.js"></script>
+</body>
+</html>

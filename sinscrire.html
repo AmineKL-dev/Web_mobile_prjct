@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinscire</title>
+    
+    <link rel="stylesheet" href="sinscrire.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sinscrire-content">
+            <h2>S'inscrire</h2>
+            <form action="" id="content-form">
+                <label for="Username" >Username:</label>
+                <input name="Username" type="text" id="Username" placeholder="Username" >
+
+                <label for="email" >email:</label>
+                <input name="email" type="email" id="email" placeholder="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required title="Enter a valid email">
+
+                <label for="phoneNumber" >phoneNumber:</label>
+                <input name="phoneNumber" type="number" id="phoneNumber" placeholder="phoneNumber">
+
+                <label for="gender" >gender:</label>
+                <select name="gender" id="gernder" >
+                    <option>Male</option>
+                    <option>female</option>
+                </select>
+
+                <label for="date" >date:</label>
+                <input name="date" type="date" id="date" placeholder="date">
+
+                <label for="password" >Password:</label>
+                <input name="password" type="text" id="Password" placeholder="Password" pattern=".{8,}" required title="8 characters minimum">
+                
+                <label for="picture" >picture:</label>
+                <input type="image">
+                <button type="submit">S'inscrire</button>
+
+                
+                
+            </form>
+            
+        </div>
+    </div>
+    <script src="sinscrire.js"></script>
+</body>
+</html>

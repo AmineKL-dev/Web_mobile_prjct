@@ -301,3 +301,88 @@ header .header-content .content-btn a{
 #contact form .inputs-2 .btn{
     width: 50%;
 }
+
+/* Education section */
+#Education {
+    background-color: var(--bg2-color);
+    padding: 6rem 0;
+}
+#Education h2 {
+    text-align: center;
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+/* Container for the timeline */
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Timeline items container */
+.timeline-items {
+    position: relative;
+    padding-left: 20px; /* Space for the line */
+}
+
+/* Vertical line */
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--text-color); /* Color of the line */
+}
+
+/* Individual timeline item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px; /* Space between items */
+}
+
+/* Dot on the timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px; /* Adjust to align with the line */
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--text2-color);
+    box-shadow: 0 0 15px var(--text2-color); /* Dot color */
+    border: 2px solid var(--text-color); /* Dot border */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Date styling */
+.timeline-date {
+    font-weight: bold;
+    color: var(--text-color); /* Date color */
+    margin-bottom: 10px;
+}
+
+/* Content styling */
+.timeline-content {
+    background-color: var(--bg-color); /* Background color for content */
+    padding: 21px;
+    border-radius: 2rem;
+    border: var(--text2-color) 2px solid; /* Border for content */
+    box-shadow: 0 2px 4px var(--text2-color); /* Shadow for content */
+}
+
+/* Heading inside content */
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+/* Paragraph inside content */
+.timeline-content p {
+    margin: 5px 0 0;
+    color: var(--text-color);
+}
