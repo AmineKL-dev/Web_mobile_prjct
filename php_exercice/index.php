@@ -133,9 +133,7 @@
                         <input type="radio" name="gender" id="female" value="female">
                         <label for="female">Female</label>
                     </div>
-                    <div class="gender-option">
-                        <input type="radio" name="gender" id="other" value="other">
-                        <label for="other">Other</label>
+                   
                     </div>
                 </div>
             </div>
