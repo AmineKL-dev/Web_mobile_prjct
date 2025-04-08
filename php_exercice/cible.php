@@ -9,5 +9,7 @@
     <h2>Form Data</h2>
     <p>Name: <?php echo $_POST['name']; ?></p>
     <p>Age: <?php echo $_POST['age']; ?></p>
+    <p>Email: <?php echo $_POST['email']; ?></p>
+    <p>Gender: <?php echo $_POST['gender']; ?></p>
 </body>
 </html>
